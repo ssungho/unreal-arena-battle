@@ -62,4 +62,14 @@ protected:
 	void PlayDeadAnimation();
 
 	float DeadEventDelayTime = 5.0f;
+
+// Stat Section
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Widget, Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<class UABCharacterStatComponent> Stat;
+
+// UI Widget Section
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Widget, Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<class UWidgetComponent> HpBar;
 };
